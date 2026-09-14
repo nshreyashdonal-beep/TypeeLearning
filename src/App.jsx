@@ -5,6 +5,7 @@ function App() {
   console.log(page);
 
   return (
+    <>
     <nav>
       <button className="logo" onClick={() => setPage("landing")}>
         Typee
@@ -30,6 +31,29 @@ function App() {
         </button>
       </div>
     </nav>
+  
+     {page === "landing" && (
+        <div className="page">
+          <p>Landing page</p>
+        </div>
+      )}
+
+      {page === "practice" && (
+        <div className="page">
+          <p>Practice page</p>
+        </div>
+      )}
+
+      {page === "guide" && (
+        <div className="page">
+          <p>Finger guide page</p>
+        </div>
+      )}
+    
+            <footer>
+        <p>Typee</p>
+      </footer>
+    </>
   );
 }
 

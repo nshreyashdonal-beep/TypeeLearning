@@ -51,3 +51,15 @@ nav {
   color: var(--text);
   border-bottom-color: var(--accent);
 }
+
+.page {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+footer {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 32px;
+}
